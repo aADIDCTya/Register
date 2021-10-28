@@ -1,0 +1,25 @@
+{% extends "forms/base.html" %}
+
+{% block content %}
+
+    
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-10">
+        
+            <div class="list-group">
+                <ul>
+                {% for deat in deats %}
+                <li>Student Name : {{deat.Student_Name}}</li>
+                <li>College Name :{{deat.College_Name}}</li>
+                <li>Specialization :{{deat.Specialization}} </li>
+                <li>Degree Name : {{deat.Degree_Name}}</li>
+                <li>Internship Role :{{deat.Internship_Applied_For}} </li>
+                <li>Phone Number : {{deat.Phone_No}}</li>
+                <li>Email Address :{{deat.Email_id}} </li>
+                <li>Location : {{deat.Location}}</li>
+                <li>Gender : {{deat.Gender}}</li>
+            </ul>
+                {% endfor %}
+            </div>
+    </div>
+{% endblock %}

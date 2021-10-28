@@ -1,0 +1,71 @@
+{%extends 'forms/base.html'%}
+{%block content%}
+<style>
+    .form
+    {
+        align-content: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+    }
+    ul {
+        list-style-type: none;
+        font-size: large;
+        text-align: justify;
+        align-content: center;
+    }
+    h2
+    {   font-family: 'Zen Kurenaido', sans-serif;
+        background-color:orange;
+        color: rgb(39, 99, 39);
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    svg text {
+        font-family: Lora;
+        letter-spacing: 10px;
+        stroke: #ffa5d8;
+        font-size: 150px;
+        font-weight: 700;
+        stroke-width: 3;
+       
+        animation: textAnimate 5s infinite alternate;
+        
+      }
+      
+      @keyframes textAnimate {
+        0% {
+          stroke-dasharray: 0 50%;
+          stroke-dashoffset:  20%;
+          fill:hsl(189, 68%, 75%)
+      
+        }
+        
+        100% {
+          stroke-dasharray: 50% 0;
+          stroke-dashoffstet: -20%;
+          fill: hsla(189, 68%, 75%,0%)
+        }
+        
+      }
+      
+</style>
+<ul>
+    
+    {%for deat in deats%}
+    <li>Student Name :  {{deat.Student_Name}}</li>
+    <li>College Name :  {{deat.College_Name}}</li>
+    <li>Specializati :    {{deat.Specialization}} </li>
+    <li>Degree Name  :   {{deat.Degree_Name}}</li>
+    <li>Intern Role  :   {{deat.Intern}}</li>
+    <li>City    :  {{deat.City}}</li>
+    <li>Phone Number :  {{deat.Phone_No}}</li>
+    <li>Email Address: {{deat.Email_id}} </li>
+    <li>Gender  :    {{deat.Gender}} </li>
+    
+   
+    
+    {%endfor%}
+</ul>
+
+<h2>Gracias!</h2>
+{%endblock%}

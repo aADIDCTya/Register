@@ -1,0 +1,17 @@
+                    <label for="Internship_Applied_for">Internship Applied for</label>
+                    <input type="text" name="Internship_Applied_for" class="form-control" id="Internship Applied For" required>
+                    
+                    <label for="Phone_No">Contact Number</label>
+                    <input type="text" name="Phone_No" class="form-control" id="Phone No" required>
+                    
+                    <label for="Email_id">Email Address</label>
+                    <input type="text" name="Email_id" class="form-control" id="Email id" required>
+
+                    <label for="location">location</label>
+                    <input type="text" name="Email_id" class="form-control" id="Location" required>
+
+                    <label for="gender">Enter Gender</label>
+                    <input type="text" name="gender" class="form-control" id="Gender" required>
+                    
+                   
+                    ,'Phone_No','Email_id','location','gender','notes',
